@@ -11,38 +11,44 @@ body {
   padding: 1em;
   margin: 0;
 }
-.topbar .name {
-  text-decoration: none;
-  color: black;
-  font-size: 1.2em;
-  font-weight: bold;
-  padding: 0;
-}
 .topbar nav {
-  display: flex;
-  justify-content: space-between;
-  background: none;
-  font-weight: 400;
-  padding: 0;
+  width: auto;
+  overflow: hidden;
+  margin: auto;
 }
 .topbar nav ul {
-  display: flex;
+  margin: 0;
+  padding: 1em;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
   list-style-type: none;
-  margin: 0em 27em;
+  margin: 0;
+  border: 0;
   padding: 0;
+  outline: 0;
 }
 .topbar nav a {
+  font-weight: 500;
+  list-style: none;
+  box-sizing: border-box;
   text-decoration: none;
-  color: black;
-  font-size: 1.2em;
-  padding: 0.5em 3.5em;
+  color: #00b9fb;
+  letter-spacing: 0.5px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 section.home .head {
+  font-weight: bold;
   color: white;
   font-weight: 500;
   font-size: 1.5em;
   text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 section.home .home_box {
   display: block;
@@ -53,6 +59,7 @@ section.home .home_box {
   height: 60%;
   align-self: center;
   background-color: white;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
 }
 section.home .home_box .subhead {
   color: #00b9fb;
@@ -62,64 +69,56 @@ section.home .home_box .subhead {
 }
 section.home .home_box .explanation {
   text-align: center;
+  color: #00b9fb;
 }
 
+section.about {
+  justify-content: center;
+}
 section.about .head {
   margin-top: 2.5em;
   margin-bottom: 0em;
   border: 0;
   padding: 0;
   outline: 0;
-  font-weight: normal;
+  font-weight: 500;
   text-align: center;
   color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 section.about .border {
-  line-height: 1.5rem;
-  font-family: "font-regular";
-  font-size: 100%;
-  font-style: normal;
-  font-weight: normal;
-  box-sizing: border-box;
   width: 30px;
   margin-top: 4px;
   height: 1px;
   border: 0;
   border-top: 2px solid white;
+  margin-bottom: 4em;
 }
 section.about .description {
+  justify-content: center;
+  text-align: center;
   font-size: 1.2em;
   color: white;
-  margin: 1em 5em;
+  margin: auto;
   width: 50%;
-}
-section.about .face {
-  position: relative;
-  width: 15em;
-  height: auto;
-  left: 75em;
-  top: -12em;
 }
 
 section.projects .head {
-  margin-top: -5em;
+  margin-top: 3em;
   margin-bottom: 0em;
   border: 0;
   padding: 0;
   outline: 0;
-  font-weight: normal;
+  font-weight: 500;
   text-align: center;
   color: white;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
 }
 section.projects .border {
-  line-height: 1.5rem;
-  font-family: "font-regular";
-  font-size: 100%;
-  font-style: normal;
-  font-weight: normal;
   box-sizing: border-box;
   width: 30px;
   margin-top: 4px;
+  margin-bottom: -1em;
   height: 1px;
   border: 0;
   border-top: 2px solid white;
@@ -130,6 +129,7 @@ section.projects .project_list {
   justify-items: center;
 }
 section.projects .project_list .project_1 {
+  border-radius: 8px;
   display: block;
   box-sizing: border-box;
   width: 62.5%;
@@ -137,19 +137,25 @@ section.projects .project_list .project_1 {
   padding: 1em;
   align-self: center;
   background-color: white;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
 }
 section.projects .project_list .project_1 .demo {
+  border-radius: 8px;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
   margin: 1em;
   width: 50em;
+  max-width: 100%;
 }
 section.projects .project_list .project_1 .subhead {
   color: #00b9fb;
   margin: 1em;
 }
 section.projects .project_list .project_1 .desc {
+  color: #00b9fb;
   margin: 1em;
 }
 section.projects .project_list .project_2 {
+  border-radius: 8px;
   display: block;
   box-sizing: border-box;
   width: 62.5%;
@@ -157,19 +163,25 @@ section.projects .project_list .project_2 {
   padding: 1em;
   align-self: center;
   background-color: white;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
 }
 section.projects .project_list .project_2 .demo {
+  border-radius: 8px;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
   margin: 1em;
   width: 50em;
+  max-width: 100%;
 }
 section.projects .project_list .project_2 .subhead {
   color: #00b9fb;
   margin: 1em;
 }
 section.projects .project_list .project_2 .desc {
+  color: #00b9fb;
   margin: 1em;
 }
 section.projects .project_list .project_3 {
+  border-radius: 8px;
   display: block;
   box-sizing: border-box;
   width: 62.5%;
@@ -177,19 +189,25 @@ section.projects .project_list .project_3 {
   padding: 1em;
   align-self: center;
   background-color: white;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
 }
 section.projects .project_list .project_3 .demo {
+  border-radius: 8px;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
   margin: 1em;
   width: 50em;
+  max-width: 100%;
 }
 section.projects .project_list .project_3 .subhead {
   color: #00b9fb;
   margin: 1em;
 }
 section.projects .project_list .project_3 .desc {
+  color: #00b9fb;
   margin: 1em;
 }
 section.projects .project_list .project_4 {
+  border-radius: 8px;
   display: block;
   box-sizing: border-box;
   width: 62.5%;
@@ -197,16 +215,21 @@ section.projects .project_list .project_4 {
   padding: 1em;
   align-self: center;
   background-color: white;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
 }
 section.projects .project_list .project_4 .demo {
+  border-radius: 8px;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
   margin: 1em;
   width: 50em;
+  max-width: 100%;
 }
 section.projects .project_list .project_4 .subhead {
   color: #00b9fb;
   margin: 1em;
 }
 section.projects .project_list .project_4 .desc {
+  color: #00b9fb;
   margin: 1em;
 }
 
@@ -216,7 +239,8 @@ section.contact .head {
   border: 0;
   padding: 0;
   outline: 0;
-  font-weight: normal;
+  font-weight: 500;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
   text-align: center;
   color: white;
 }
@@ -234,6 +258,9 @@ section.contact .border {
   border-top: 2px solid white;
 }
 section.contact .contact_box {
+  border-radius: 8px;
+  color: #00b9fb;
+  box-shadow: 0 3px 4px rgba(37, 37, 37, 0.2), 0 1px 6px rgba(65, 63, 63, 0.25);
   display: block;
   padding: 1em;
   width: auto;
@@ -241,8 +268,5 @@ section.contact .contact_box {
   background-color: white;
 }
 section.contact .contact_box .email {
-  text-align: center;
-}
-section.contact .contact_box .phone {
   text-align: center;
 }/*# sourceMappingURL=main.css.map */
