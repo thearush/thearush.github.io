@@ -6,30 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Arush Sarda</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script>
-      document.getElementById("top").addEventListener("button", returnToTop);
-      function returnToTop() {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      }
-    </script>
   </head>
   <body>
-    <a id="home_section"></a>
     <section class="navigation">
       <div class="container">
         <div class="topbar">
           <nav>
             <ul class="options">
-              <li class="home_item">
-                <button
-                  id="top"
-                  class="home"
-                  type="button"
-                  onclick="returnToTop();"
-                >
-                  Home
-                </button>
-              </li>
+              <li><a href="#home_section">Home</a></li>
               <li><a href="#about_section">About</a></li>
               <li><a href="#projects_section">Projects</a></li>
               <li><a href="#contact_section">Contact</a></li>
@@ -40,6 +24,7 @@
     </section>
 
     <section class="home">
+      <a id="home_section"></a>
       <h1 class="head">Hi, I'm Arush Sarda</h1>
       <div class="home_box">
         <h2 class="subhead">Aspiring Software Engineer</h2>
@@ -48,10 +33,10 @@
           interest in programming and computer science.
         </p>
       </div>
-      <a id="about_section"></a>
     </section>
 
     <section class="about">
+      <a id="about_section"></a>
       <h2 class="head">About Me</h2>
       <hr class="border" />
       <p class="description">
@@ -65,10 +50,10 @@
         Outside of programming, I love watching anime, playing video games,
         riding my bike, and reading horror and fantasy novels.
       </p>
-      <a id="projects_section"></a>
     </section>
 
     <section class="projects">
+      <a id="projects_section"></a>
       <h2 class="head">Projects</h2>
       <hr class="border" />
       <div class="project_list">
