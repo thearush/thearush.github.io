@@ -28,7 +28,7 @@ body {
 .topbar nav ul {
   display: flex;
   list-style-type: none;
-  margin: 0em 20em;
+  margin: 0em 27em;
   padding: 0;
 }
 .topbar nav a {
@@ -65,18 +65,12 @@ section.home .home_box .explanation {
 }
 
 section.about .head {
-  box-sizing: border-box;
   margin-top: 2.5em;
   margin-bottom: 0em;
   border: 0;
   padding: 0;
   outline: 0;
-  vertical-align: baseline;
-  background: transparent;
-  font-style: normal;
   font-weight: normal;
-  font-size: 1.4238rem;
-  line-height: 1.875rem;
   text-align: center;
   color: white;
 }
@@ -108,18 +102,12 @@ section.about .face {
 }
 
 section.projects .head {
-  box-sizing: border-box;
   margin-top: -5em;
   margin-bottom: 0em;
   border: 0;
   padding: 0;
   outline: 0;
-  vertical-align: baseline;
-  background: transparent;
-  font-style: normal;
   font-weight: normal;
-  font-size: 1.4238rem;
-  line-height: 1.875rem;
   text-align: center;
   color: white;
 }
@@ -223,17 +211,12 @@ section.projects .project_list .project_4 .desc {
 }
 
 section.contact .head {
-  box-sizing: border-box;
+  margin-top: 1em;
   margin-bottom: 0em;
   border: 0;
   padding: 0;
   outline: 0;
-  vertical-align: baseline;
-  background: transparent;
-  font-style: normal;
   font-weight: normal;
-  font-size: 1.4238rem;
-  line-height: 1.875rem;
   text-align: center;
   color: white;
 }
